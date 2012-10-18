@@ -85,6 +85,8 @@ jQuery.Callbacks = function( options ) {
 		},
 		// Actual Callbacks object
 		self = {
+			// Return the number of callbacks currently stored
+			length: list.length,
 			// Add a callback or a collection of callbacks to the list
 			add: function() {
 				if ( list ) {
